@@ -35,7 +35,7 @@ def required_fields(fields: tuple):
                                 if field not in body or not body[field]:
                                     resp.status = falcon.HTTP_400
                                     errors.append(field)
-                                error = True
+                                    error = True
                 except Exception as e:
                     traceback.print_exc()
                     logstd(str(e))
