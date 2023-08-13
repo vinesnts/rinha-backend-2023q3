@@ -1,0 +1,3 @@
+
+class MustBeDateException(Exception):
+  pass

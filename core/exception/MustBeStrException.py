@@ -1,0 +1,4 @@
+
+
+class MustBeStrException(Exception):
+  pass

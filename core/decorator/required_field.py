@@ -1,6 +1,5 @@
 import traceback
 import falcon
-from core.error_codes import REQUIRED_FIELD
 from core.response import Error, Response
 from core.utils.utils import logstd
 
@@ -46,7 +45,7 @@ def required_fields(fields: tuple):
             if not error:
                 func(*args, **kwargs)
             else:
-                resp.media = Response(success=False, error=Error(REQUIRED_FIELD, errors))
+                resp.media = Response(success=False, error=Error(400, errors))
             return
         return wraper
     return verify_fields

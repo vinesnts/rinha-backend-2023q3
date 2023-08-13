@@ -1,0 +1,3 @@
+
+class MustBeStrListException(Exception):
+  pass

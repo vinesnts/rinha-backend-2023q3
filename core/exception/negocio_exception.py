@@ -1,3 +1,0 @@
-
-class NegocioException(Exception):
-    pass

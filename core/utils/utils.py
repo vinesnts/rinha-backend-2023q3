@@ -6,6 +6,7 @@ from datetime import datetime
 def logstd(msg):
     print(str(datetime.now()) + " - " + msg)
     sys.stdout.flush()
+    sys.stderr.flush()
 
 def list_remove_nones(list: list) -> list:
     ''' Removes None values from a list '''
